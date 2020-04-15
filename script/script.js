@@ -1,6 +1,8 @@
 "use strict"; 
+
+
 function funcMath () {
-    let a = 5;
+    let a = Math.floor(Math.random() * 10);
      return function newNumber(b){
         while(isNaN(b)||b.trim()===''||b===null){
             b = +newNumber(prompt ("Введи число!"));
@@ -19,7 +21,7 @@ let y;
 let start = function(){
     y = prompt("Угадай число от 1 до 100");
     while (isNaN(y)||y.trim()===''||y===null){
-        y=prompt("Угадай число от 1 до 100");
+        y=prompt("Введи число!");
     }
     return y;
 };
